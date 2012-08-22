@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use base qw{Exporter};
 
-our $VERSION='0.02';
+our $VERSION='0.03';
 our @EXPORT=qw(ProperCase);
 our @EXPORT_OK=qw(ProperCase);
 
@@ -18,7 +18,7 @@ String::ProperCase::Surname - Converts Surnames to Proper Case
 
 =head1 DESCRIPTION
 
-The package String::ProperCase::Surname is an L<Exporter> that export exactly one function called ProperCase.  The ProperCase function is for use on Surnames which handles cases like O'Neal, O'Brien, McLean, etc.
+The package String::ProperCase::Surname is an L<Exporter> that exports exactly one function called ProperCase.  The ProperCase function is for use on Surnames which handles cases like O'Neal, O'Brien, McLean, etc.
 
 After researching the proper case issues there are three different use cases with a wide variety of loose rules.  This algorithm is customized for surnames.  Other uses such as "TitleCase" and "MenuCase" have different algorithms.  The main difference is that in surnames the letter following an apostrophe is always uppercase (e.g. "O'Brien") in title case and menu case the letter is always lowercase (e.g. "They're").
 
@@ -57,7 +57,7 @@ DeGnath DeGraff DeGraffenreid DeGrange DeGraw DeGrenier DeGroft DeGuaincour
 DeHaan DeHaas DeHart DeHass DeHate DeHaven DeHeer DeHerrera DeJarnette DeJean
 DeLaet DelAmarre DeLancey DeLara DeLarm DelAshmutt DeLaughter DeLay DeLespine
 DelGado DelGaudio DeLong DeLony DeLorenzo DeLozier DelPrincipe DelRosso DeLuca
-DeLude DeMaio DeMarchi DeMarco DeMarcus DeMarmein DeMars DeMartinis DeMay
+DeLude DeLuke DeMaio DeMarchi DeMarco DeMarcus DeMarmein DeMars DeMartinis DeMay
 DeMello DeMonge DeMont DeMontigny DeMoss DeNunzio DeNure DePalma DePaola
 DePasquale DePauli DePerno DePhillips DePoty DePriest DeRatt DeRemer DeRosa
 DeRosier DeRossett DeSaegher DeSalme DeShane DeShano DeSilva DeSimencourt
@@ -173,9 +173,8 @@ DavisNetworks.com supports all Perl applications including this package.
 
   Michael R. Davis
   CPAN ID: MRDVT
-  Satellite Tracking of People, LLC
-  mdavis@stopllc.com
-  http://www.stopllc.com/
+  qw/perl michaelrdavis com/
+  http://www.davisnetworks.com/
 
 =head1 COPYRIGHT
 
